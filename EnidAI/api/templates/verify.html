@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="ru"><head>
+	<title>Регистрация</title>
+
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js" integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css">
+
+
+
+
+</head>
+<body>
+<!-- Section: Design Block -->
+<section class="background-radial-gradient overflow-hidden">
+  <style>
+    .background-radial-gradient {
+      background-color: hsl(218, 41%, 15%);
+      background-image: radial-gradient(650px circle at 0% 0%,
+          hsl(218, 41%, 5%) 15%,
+          hsl(218, 41%, 3%) 35%,
+          hsl(218, 41%, 3%) 75%,
+          hsl(218, 41%, 12%) 80%,
+          transparent 100%),
+        radial-gradient(1250px circle at 100% 100%,
+          hsl(218, 41%, 5%) 15%,
+          hsl(218, 41%, 3%) 35%,
+          hsl(218, 41%, 2%) 75%,
+          hsl(218, 41%, 9%) 80%,
+          transparent 100%);
+    }
+
+    #radius-shape-1 {
+      height: 220px;
+      width: 220px;
+      top: -60px;
+      left: -130px;
+      background: radial-gradient(#44006b, #ad1fff);
+      overflow: hidden;
+    }
+
+    #radius-shape-2 {
+      border-radius: 38% 62% 63% 37% / 70% 33% 67% 30%;
+      bottom: -60px;
+      right: -110px;
+      width: 300px;
+      height: 300px;
+      background: radial-gradient(#44006b, #ad1fff);
+      overflow: hidden;
+    }
+
+    .bg-glass {
+      background-color: hsla(0, 0%, 100%, 0.9) !important;
+      backdrop-filter: saturate(200%) blur(25px);
+    }
+  </style>
+
+  <div class="container px-4 py-5 px-md-5 text-center text-lg-start my-5">
+    <div class="row gx-lg-5 align-items-center mb-5">
+      <div class="col-lg-6 mb-5 mb-lg-0" style="z-index: 10">
+        <h4 class="my-5 display-5 fw-bold ls-tight" style="color: hsl(218, 81%, 95%)">
+         Зачем это нужно? <br>
+          <span style="color: hsl(218, 81%, 75%)">Нас самом деле это необходимо. Ведь мы должны знать  кого  мы защищаем. И да это предотвращает возможности взлома. Так же при обнаружении нарушения мы заполним DMCA форму платформы(например tik tok) c указанием ваших данных(не волнуйтесь мы обеспечиваем  защищенность ваших данных и гарантируем, что  они не попадут ни в чьи руки)
+  </span>
+        </h4>
+        <p class="mb-4 opacity-70" style="color: hsl(218, 81%, 85%)">
+
+        </p>
+      </div>
+
+      <div class="col-lg-6 mb-5 mb-lg-0 position-relative">
+
+
+
+        <div class="card bg-glass">
+  <p class="font-weight-bold h2" style="margin-top:10%;color:darkblue">Верификация</p>
+
+
+<div class="card-body px-4 py-5 px-md-5">
+            <form method="post" action="/accounts/signup/">
+                {% csrf_token %}
+              <!-- 2 column grid layout with text inputs for the first and last names -->
+
+
+              <!-- Email input -->
+              <div data-mdb-input-init="" class="form-outline mb-4">
+                <input name="password1" id="form3Example3" class="form-control" type="text">
+                <label class="form-label" for="form3Example3">ФИО</label>
+              </div>
+
+              <!-- Password input -->
+              <div data-mdb-input-init="" class="form-outline mb-4">
+                <input name="password2" id="form3Example4" class="form-control" type="text">
+                <label class="form-label" for="form3Example4">Серия и номер без пробела</label>
+              </div>
+
+              <!-- Checkbox -->
+
+
+              <!-- Submit button -->
+              <button type="submit" data-mdb-button-init="" data-mdb-ripple-init="" class="btn btn-outline-warning btn-block mb-4">
+                Прикрепить файл
+              </button>
+
+              <!-- Register buttons -->
+              <div class="text-center">
+                <p></p><h6 style="color: hsl(218, 81%, 12%)">
+Цветные скан-копии идентифицирующих документов
+Копия паспорта (главный разворот и страница с регистрацией)
+Если паспорт переиздавался, просьба предоставить 19-ую страницу паспорта.
+</h6><p></p>
+
+
+
+
+
+
+
+              </div>
+            <button type="button" data-mdb-button-init="" data-mdb-ripple-init="" class="btn btn-secondary btn-floating mx-1">
+                  Отправить
+                </button></form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- Section: Design Block -->
+
+
+<div style="all: unset;"><div style="all: unset;"></div></div></body></html>

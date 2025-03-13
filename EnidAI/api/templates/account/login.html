@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="ru"><head>
+	<title>Вход</title>
+
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js" integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css">
+
+<link rel="apple-touch-icon" href="{% static 'img/Logotip.png' %}" sizes="180x180">
+<link rel="icon" href="{% static 'img/Logotip.png' %}" sizes="32x32" type="image/png">
+<link rel="icon" href="{% static 'img/Logotip.png' %}" sizes="16x16" type="image/png">
+<link rel="manifest" href="https://getbootstrap.com/docs/5.3/assets/img/favicons/manifest.json">
+<link rel="mask-icon" href="{% static 'img/Logotip.png' %}" color="#712cf9">
+<link rel="icon" href="{% static 'img/Logotip.pmg' %}">
+<meta name="theme-color" content="#712cf9">
+
+
+</head>
+<body>
+<!-- Section: Design Block -->
+<section class="background-radial-gradient">
+  <style>
+    .background-radial-gradient {
+      background-color: hsl(218, 41%, 15%);
+      background-image: radial-gradient(
+          650px circle at 0% 0%,
+          hsl(218, 41%, 5%) 15%,
+          hsl(218, 41%, 3%) 35%,
+          hsl(218, 41%, 3%) 75%,
+          hsl(218, 41%, 12%) 80%,
+          transparent 100%
+        ),
+        radial-gradient(
+          1250px circle at 100% 100%,
+          hsl(218, 41%, 5%) 15%,
+          hsl(218, 41%, 3%) 35%,
+          hsl(218, 41%, 2%) 75%,
+          hsl(218, 41%, 9%) 80%,
+          transparent 100%
+        );
+      min-height: 100vh;
+      overflow-y: auto;
+    }
+
+    #radius-shape-1 {
+      height: 220px;
+      width: 220px;
+      top: -60px;
+      left: -130px;
+      background: radial-gradient(#44006b, #ad1fff);
+      position: absolute;
+    }
+
+    #radius-shape-2 {
+      border-radius: 38% 62% 63% 37% / 70% 33% 67% 30%;
+      bottom: -60px;
+      right: -110px;
+      width: 300px;
+      height: 300px;
+      background: radial-gradient(#44006b, #ad1fff);
+      position: absolute;
+    }
+
+    .bg-glass {
+      background-color: hsla(0, 0%, 100%, 0.9) !important;
+      backdrop-filter: saturate(200%) blur(25px);
+      max-height: 80vh;
+      overflow-y: auto;
+    }
+
+    /* Стили для еще большего увеличения формы ввода */
+    .form-outline .form-control {
+      height: 60px; /* Еще больше высота поля ввода */
+      font-size: 22px; /* Еще больше шрифт */
+      padding: 15px 20px; /* Увеличиваем внутренние отступы */
+    }
+
+    .form-outline .form-label {
+      font-size: 18px; /* Увеличиваем шрифт метки */
+      top: -10px; /* Корректируем положение метки */
+    }
+
+    .btn.btn-outline-warning {
+      height: 50px; /* Увеличиваем высоту кнопки */
+      font-size: 20px; /* Увеличиваем шрифт кнопки */
+      padding: 10px 20px; /* Увеличиваем отступы кнопки */
+    }
+
+    /* Медиа-запрос для мобильных устройств */
+    @media (max-width: 768px) {
+      .container {
+        padding: 15px;
+      }
+      .row {
+        flex-direction: column;
+      }
+      .col-lg-6 {
+        width: 100%;
+      }
+      .bg-glass {
+        max-height: 60vh;
+      }
+      .form-outline .form-control {
+        height: 55px; /* Чуть меньше на мобильных */
+        font-size: 20px;
+      }
+      .form-outline .form-label {
+        font-size: 16px;
+      }
+      .btn.btn-outline-warning {
+        height: 45px; /* Чуть меньше кнопка на мобильных */
+        font-size: 18px;
+      }
+    }
+  </style>
+
+  <div class="container px-4 py-5 px-md-5 text-center text-lg-start my-5">
+    <div class="row gx-lg-5 align-items-center mb-5">
+      <div class="col-lg-6 mb-5 mb-lg-0" style="z-index: 10">
+        <h1 class="my-5 display-5 fw-bold ls-tight" style="color: hsl(218, 81%, 95%)">
+          Deponds поможет <br>
+          <span style="color: hsl(218, 81%, 75%)">защитить ваш контент</span>
+        </h1>
+        <p class="mb-4 opacity-70" style="color: hsl(218, 81%, 85%)"></p>
+      </div>
+
+      <div class="col-lg-6 mb-5 mb-lg-0 position-relative">
+        <div id="radius-shape-1"></div>
+        <div id="radius-shape-2"></div>
+        <div class="card bg-glass">
+          <p style="margin-top: 10%" class="font-weight-bold h2">Вход</p>
+          <div class="card-body px-4 py-5 px-md-5">
+            <form method="post" action="/accounts/login/">
+                {% csrf_token %}
+              <div data-mdb-input-init="" class="form-outline mb-4">
+                <input type="text" name="login" id="form3Example3" class="form-control">
+                <label class="form-label" for="form3Example3">Email:</label>
+              </div>
+              <div data-mdb-input-init="" class="form-outline mb-4">
+                <input type="password" name="password" id="form3Example4" class="form-control">
+                <label class="form-label" for="form3Example4">Пароль:</label>
+              </div>
+              <button type="submit" data-mdb-button-init="" data-mdb-ripple-init="" class="btn btn-outline-warning btn-block mb-4">
+                Войти
+              </button>
+              <div class="text-center"><p style="text-align:left"><a href="/accounts/signup" style="color:blue;margin-top:4px;padding-top:3px;">Зарегестрироваться ?</a></p>
+                <p>или используйте</p>
+                <button type="button" data-mdb-button-init="" data-mdb-ripple-init="" class="btn btn-outline-secondary btn-floating mx-1">
+                  <a title="Google" href="/accounts/google/login/?process=login">
+                    <i class="fab fa-google"></i>
+                  </a>
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- Section: Design Block -->
+
+
+<div style="all: unset;"><div style="all: unset;"></div></div></body></html>
